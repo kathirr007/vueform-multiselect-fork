@@ -1,5 +1,5 @@
 {
-  "name": "@vueform/multiselect-fork",
+  "name": "vueform-multiselect-fork",
   "version": "2.6.11a",
   "private": false,
   "description": "Vue 3 multiselect component with single select, multiselect and tagging options.",
