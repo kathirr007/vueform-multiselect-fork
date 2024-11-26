@@ -1,6 +1,6 @@
 {
-  "name": "@vueform/multiselect",
-  "version": "2.6.11",
+  "name": "@vueform/multiselect-fork",
+  "version": "2.6.11a",
   "private": false,
   "description": "Vue 3 multiselect component with single select, multiselect and tagging options.",
   "license": "MIT",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueform/multiselect.git"
+    "url": "git+https://github.com/kathirr007/vueform-multiselect-fork.git"
   },
   "bugs": {
     "url": "https://github.com/vueform/multiselect/issues"

@@ -41,7 +41,6 @@
           :aria-placeholder="ariaPlaceholder"
           :aria-expanded="isOpen"
           :aria-activedescendant="ariaActiveDescendant"
-          :aria-multiselectable="ariaMultiselectable"
           role="combobox"
 
           v-bind="{
@@ -105,7 +104,6 @@
               :aria-placeholder="ariaPlaceholder"
               :aria-expanded="isOpen"
               :aria-activedescendant="ariaActiveDescendant"
-              :aria-multiselectable="ariaMultiselectable"
               role="combobox"
 
               v-bind="{
@@ -179,7 +177,7 @@
       >
         <slot name="beforelist" :options="fo"></slot>
 
-        <ul :class="classList.options" :id="ariaControls" role="listbox">
+        <ul :class="classList.options" :aria-multiselectable="ariaMultiselectable" :id="ariaControls" role="listbox">
           <template v-if="groups">
             <li
               v-for="(group, i, key) in fg"
