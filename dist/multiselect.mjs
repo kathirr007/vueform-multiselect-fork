@@ -4381,13 +4381,13 @@ var script = {
 
 const _hoisted_1 = ["id", "dir"];
 const _hoisted_2 = ["tabindex", "aria-controls", "aria-placeholder", "aria-expanded", "aria-activedescendant", "aria-multiselectable", "role"];
-const _hoisted_3 = ["type", "modelValue", "value", "autocomplete", "id", "aria-controls", "aria-placeholder", "aria-expanded", "aria-activedescendant", "aria-multiselectable"];
+const _hoisted_3 = ["type", "modelValue", "value", "autocomplete", "id", "aria-controls", "aria-placeholder", "aria-expanded", "aria-activedescendant"];
 const _hoisted_4 = ["onKeyup", "aria-label"];
 const _hoisted_5 = ["onClick"];
-const _hoisted_6 = ["type", "modelValue", "value", "id", "autocomplete", "aria-controls", "aria-placeholder", "aria-expanded", "aria-activedescendant", "aria-multiselectable"];
+const _hoisted_6 = ["type", "modelValue", "value", "id", "autocomplete", "aria-controls", "aria-placeholder", "aria-expanded", "aria-activedescendant"];
 const _hoisted_7 = ["innerHTML"];
 const _hoisted_8 = ["id"];
-const _hoisted_9 = ["id"];
+const _hoisted_9 = ["aria-multiselectable", "id"];
 const _hoisted_10 = ["id", "aria-label", "aria-selected"];
 const _hoisted_11 = ["data-pointed", "onMouseenter", "onClick"];
 const _hoisted_12 = ["innerHTML"];
@@ -4442,7 +4442,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             "aria-placeholder": _ctx.ariaPlaceholder,
             "aria-expanded": _ctx.isOpen,
             "aria-activedescendant": _ctx.ariaActiveDescendant,
-            "aria-multiselectable": _ctx.ariaMultiselectable,
             role: "combobox"
           }, {
             ...$props.attrs,
@@ -4515,7 +4514,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                     "aria-placeholder": _ctx.ariaPlaceholder,
                     "aria-expanded": _ctx.isOpen,
                     "aria-activedescendant": _ctx.ariaActiveDescendant,
-                    "aria-multiselectable": _ctx.ariaMultiselectable,
                     role: "combobox"
                   }, {
                 ...$props.attrs,
@@ -4623,6 +4621,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         renderSlot(_ctx.$slots, "beforelist", { options: _ctx.fo }),
         createElementVNode("ul", {
           class: normalizeClass(_ctx.classList.options),
+          "aria-multiselectable": _ctx.ariaMultiselectable,
           id: _ctx.ariaControls,
           role: "listbox"
         }, [
